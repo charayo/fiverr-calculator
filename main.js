@@ -125,7 +125,7 @@ clrBtn.addEventListener('click',function (){
 
 //Equals button
 equBtn.addEventListener('click', function(){
-    if (curDisp != ""){
+    if (curDisp != "" && oprUsed != 1){
         //operation 
         var a = parseFloat(dispPrv.innerHTML);
         var b = parseFloat(dispCur.innerHTML);
