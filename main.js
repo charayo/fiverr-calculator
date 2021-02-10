@@ -125,22 +125,24 @@ clrBtn.addEventListener('click',function (){
 
 //Equals button
 equBtn.addEventListener('click', function(){
-    //operation 
-    var a = parseFloat(dispPrv.innerHTML);
-    var b = parseFloat(dispCur.innerHTML);
-    dispPrv.innerHTML = "";
-    opera=='+'?dispCur.innerHTML = Math.round(a+b):console.log();
-    opera=='-'?dispCur.innerHTML = Math.round(a-b):console.log();
-    opera=='x'?dispCur.innerHTML = Math.round(a*b):console.log();
-    opera=='/'?dispCur.innerHTML = Math.round(a/b):console.log();
-    opera=='%'?dispCur.innerHTML = Math.round(a%b):console.log();
-    opera=='+/-'?dispCur.innerHTML = a/b:console.log();
-    mem = [];
-    oprUsed = 1;
-    chkDot = 0;
-    // pomChkNv = 0;
-    // pomChkPv = 1;
-    seeIf=0;
+    if (curDisp != ""){
+        //operation 
+        var a = parseFloat(dispPrv.innerHTML);
+        var b = parseFloat(dispCur.innerHTML);
+        dispPrv.innerHTML = "";
+        opera=='+'?dispCur.innerHTML = Math.round(a+b):console.log();
+        opera=='-'?dispCur.innerHTML = Math.round(a-b):console.log();
+        opera=='x'?dispCur.innerHTML = Math.round(a*b):console.log();
+        opera=='/'?dispCur.innerHTML = Math.round(a/b):console.log();
+        opera=='%'?dispCur.innerHTML = Math.round(a%b):console.log();
+        opera=='+/-'?dispCur.innerHTML = a/b:console.log();
+        mem = [];
+        oprUsed = 1;
+        chkDot = 0;
+        // pomChkNv = 0;
+        // pomChkPv = 1;
+        seeIf=0;
+    }
 })
 //fiverr earn button
 fivBtn.addEventListener('click',function () {
