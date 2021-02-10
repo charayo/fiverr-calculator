@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiverr Calculator</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fluid bg-black p-0 " id="cont-wrap">
+        <nav class="container-fluid navbar bg-fiverr p-4 navbar-expand-sm ">
+            <div class="">
+                <i class="fa fa-bars" aria-hidden="true"></i><span   class="font-weight-bolder" id="spanTitle">CALCULATOR</span>
+            </div>
+            <!-- <div class="">
+                <i class="fa fa-bars" aria-hidden="true"></i><span   class="font-weight-bolder" id="spanTitleLg"><center>CALCULATOR</center></span>
+            </div> -->
+        </nav>
+    
+        <div class="container-fluid p-0">
+            <div class="display bg-dk">
+                <h1 id="disp-prv" data-prv-disp class="pr-2"></h1>
+                <h1 id="disp-cur" data-cur-disp class="pr-2"></h1>
+            </div>
+            <div class="btn-pad ">
+                <div class="row1">
+                    <div class="calc-cs bg-wht" id="ac" data-all-clr>AC</div>
+                    <div class="calc-cs bg-wht" id="clr" data-del>C</div>
+                    <div class="calc-cs bg-wht" id="plsm" data-pom>+/-</div>
+                    <div class="calc-cs bg-wht" id="modu" data-opr>%</div>
+    
+                    <div class="calc-cs" id="sev" data-num>7</div>
+                    <div class="calc-cs" id="eig" data-num>8</div>
+                    <div class="calc-cs" id="nin" data-num>9</div>
+                    <div class="calc-cs bg-lem" id="divi" data-opr>/</div>
+    
+                    <div class="calc-cs" id="fou" data-num>4</div>
+                    <div class="calc-cs" id="fiv" data-num>5</div>
+                    <div class="calc-cs" id="six" data-num>6</div>
+                    <div class="calc-cs bg-lem" id="plus" data-opr>+</div>
+    
+                    <div class="calc-cs" id="one" data-num>1</div>
+                    <div class="calc-cs" id="two" data-num>2</div>
+                    <div class="calc-cs" id="thr" data-num>3</div>
+                    <div class="calc-cs bg-lem" id="subt" data-opr>-</div>
+    
+                    <div class="calc-cs" id="zer" data-zero>0</div>
+                    <div class="calc-cs" id="dot" data-dot>.</div>
+                    <div class="calc-cs bg-orng" id="equ" data-equ>=</div>
+                    <div class="calc-cs  bg-lem" id="mult" data-opr>x</div>
+    
+                    <!-- <div class="calc-cs" id="fivBtn">F-Earn</div> -->
+                </div>
+                <div class="fivBtn">
+                    <input type="button" value="F-Earn" id="fivBtn" class="">
+                </div>
+                
+            </div>    
+        </div>
+    </div>
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
