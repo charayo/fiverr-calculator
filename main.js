@@ -135,7 +135,7 @@ equBtn.addEventListener('click', function(){
         opera=='x'?dispCur.innerHTML = Math.round(a*b):console.log();
         opera=='/'?dispCur.innerHTML = Math.round(a/b):console.log();
         opera=='%'?dispCur.innerHTML = Math.round(a%b):console.log();
-        opera=='+/-'?dispCur.innerHTML = a/b:console.log();
+        
         mem = [];
         oprUsed = 1;
         chkDot = 0;
@@ -151,33 +151,3 @@ fivBtn.addEventListener('click',function () {
     var fivRes = fivData-fivA;
     dispCur.innerHTML = fivRes;
 })
-
-
-
-// /// algorithm
-// var deji = [1,2,3,4,6,7];
-// var ayo = [6,7,8,9,5];
-// function calc(){
-//     deji.forEach(element => {
-//         ayo.forEach(ele => {
-//             if (element==ele) {
-//                 console.log(element);
-//             }
-//         });
-        
-//     });
-// }
-// calc();
-
-///set timeout to print
-// var myArray = [2,3,4,5,6,7,1,8,9];
-// var count = 0;
-// function call (){setTimeout(pick,1000);}
-// function pick() {
-//     if (count<myArray.length){
-//         dispCur.innerHTML += myArray[count]
-//         count++
-//         call();
-//     }
-// }
-// pick();
